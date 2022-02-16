@@ -1,0 +1,18 @@
+input {
+    width: 40%;
+    border-style: 2px solid black !important;
+    border-radius: 5px;
+    font-size: 1em !important;
+    padding: 10px;
+    margin: 10px;
+}
+
+form {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cart-item {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+}

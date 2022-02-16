@@ -1,21 +1,15 @@
-<h1 class="h1">Dating Cart</h1>
-<div class="cart-item" *ngFor="let item of cartItems">
+<h1 class="h1 text-center m-5">Dating Cart</h1>
+<div class="cart-item text-center" *ngFor="let item of cartItems">
     <span>{{item.name}} </span>
     <span>{{item.price | currency:"EUR" }}</span>
 </div>
 
 <form [formGroup]="checkOutForm" (ngSubmit)="onSubmit()">
     <div>
-        <label for="name">
-        Name
-      </label>
-        <input id="name" type="text" formControlName="name">
+        <input id="name" type="text" placeholder="your Name" formControlName="name">
     </div>
     <div>
-        <label for="E-Mail">
-        E-Mail Address
-      </label>
-        <input id="address" type="text" formControlName="mail">
+        <input id="address" type="text" placeholder="your Mail" formControlName="mail">
     </div>
-    <button class="button" type="submit">Purchase</button>
+    <button class="btn btn-outline-secondary my-2 my-sm-0 me-5" type="submit">Purchase</button>
 </form>
