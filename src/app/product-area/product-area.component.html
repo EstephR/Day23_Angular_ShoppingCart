@@ -1,0 +1,12 @@
+<h1 class="h1 text-center m-5">Animal Escort Service</h1>
+
+<div class="row gap-3 justify-content-center row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <!-- define within the loop the index which will be used for animal-details component -->
+    <div class="card border-0 shadow p-0" style="width: 18rem;" *ngFor="let animal of animals; index as productId" routerLink="animals/{{productId}}">
+        <img src="{{animal.img}}" class="card-img-top" height="500" style="object-fit:cover; object-position:center" alt="">
+        <div class="card-header text-center text-light bg-dark h4">{{animal.name}}</div>
+        <div class="card-body">
+            <p class="card-text m-0">{{animal.description}}</p>
+            <p class="card-text m-0">{{animal.price}} €</p>
+        </div>
+    </div>
